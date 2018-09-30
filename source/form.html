@@ -30,7 +30,61 @@
     </nav>
   </header>
   <main class="page-main">
-
+    <h1 class="page-main__title">Конкурс на самое безбашенное птуешествие с Пинк</h1>
+    <p class="page-main__intro">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <fieldset>
+        <label for="last-name">
+          Фамилия
+          <input type="text" name="last-name" id="last-name" placeholder="Укажите фамилию *" required>
+        </label>
+        <label for="first-name">
+          Имя
+          <input type="text" name="last-name" id="first-name" placeholder="Введите ваше имя *" required>
+        </label>
+        <label for="middle-name">
+          Отчество
+          <input type="text" name="last-name" id="middle-name" placeholder="Ну и отчество тоже">
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Ваши безбашенные достижения в путешествии
+        </legend>
+        <label for="shark-selfie">
+          <input type="checkbox" name="achievement" value="shark-selfie" id="shark-selfie"> Сделал селфи с акулой
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="tel">
+          Номер телефона
+          <input type="tel" name="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер, пожалуйста">
+        </label>
+        <label for="email">
+          Адрес почты
+          <input type="email" name="email" id="email" placeholder="Введите почту *" required>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>
+          С каким приложением путешествовали?
+        </legend>
+        <label for="ios">
+          <input type="radio" name="ios" id="ios" value="ios"> Pink для iOS
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Опишите свои эмоции
+        </legend>
+        <textarea>Можно прям в красках, не стесняясь в выражениях</textarea>
+      </fieldset>
+      <input type="submit" value="Отправить форму">
+      <p>
+        <span>*</span>
+        — обязательные поля
+      </p>
+    </form>
   </main>
   <footer class="page-footer">
     <a class="page-footer__logo">
