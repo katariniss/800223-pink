@@ -1,12 +1,163 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="img/logotype.svg" width="76" height="25" alt="Пинк">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a>Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="photo.html">Фотографии</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Конкурс</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Мобильное приложение Пинк раскрасит ваши серые будни!</h1>
+    <section class="application">
+      <img class="applcation_photo" src="http://placehold.it/320x400">
+      <h2 class="visually-hidden">Скачайте мобильное приложение!</h2>
+      <a class="application__download button" href="#">Скачать приложение</a>
+      <ul class="application__list">
+        <li class="application__item appication__item--ios">
+          Для iOS
+        </li>
+        <li class="application__item application__item--android">
+          Для Android
+        </li>
+        <li class="application__item application__item--windows-phone">
+          Для Windows Phone
+        </li>
+      </ul>
+      <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </section>
+    <section class="advantages">
+      <h2 class="visually-hidden">Наши преимущества</h2>
+      <p class="advantages__intro">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <h3 class="advantages__title">Поднимает настроение</h3>
+          <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </li>
+        <li class="advantages__item">
+          <h3 class="advantages__title">Меняет мир вокруг</h3>
+          <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текствовой подписью, чтобы усилить эффект</p>
+        </li>
+        <li class="advantages__item">
+          <h3 class="advantages__title">Заводит новых друзей</h3>
+          <p class="advantages__description">Ставьте лайки, комментируйте, делитесь с друзьями и заводите новых</p>
+        </li>
+      </ul>
+    </section>
+    <section class="reviews">
+      <div class="reviews__wrapper slider">
+        <h2 class="visually-hidden">Отзывы о нас</h2>
+        <div class="reviews__list slider__list">
+          <blockquote class="reviews__item slider__item">
+            <cite class="reviews__author-name">Николай Петров</cite>
+            <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
+              со своей будущей женой в комментариях к выложенной фотографии!
+            </p>
+          </blockquote>
+        </div>
+        <div class="reviews__list slider__list">
+          <blockquote class="reviews__item slider__item">
+            <cite class="reviews__author-name">Петр Николаев</cite>
+            <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
+              со своей будущей женой в комментариях к выложенной фотографии!
+            </p>
+          </blockquote>
+        </div>
+        <div class="reviews__list slider__list">
+          <blockquote class="reviews__item slider__item">
+            <cite class="reviews__author-name">Иван Шапкин</cite>
+            <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
+              со своей будущей женой в комментариях к выложенной фотографии!
+            </p>
+          </blockquote>
+        </div>
+      </div>
+      <p class="reviews__toggles slider">
+        <button class="slider__toggle" type="button">1</button>
+        <button class="slider__toggle" type="button">2</button>
+        <button class="slider__toggle" type="button">3</button>
+      </p>
+    </section>
+    <section class="price-plan">
+      <h2 class="visually-hidden">Тарифные планы</h2>
+      <div class="price-plan__wrapper slider">
+        <ul class="price-plan__list slider__list">
+          <li class="price-plan__item slider-item">
+            Эконом 2,99 USD
+            <ul class="price-plan__options options-list">
+              <li class="options-item option-unchecked">Розовый фильтр</li>
+              <li class="options-item option-unchecked">Смайлики</li>
+              <li class="options-item option-unchecked">Комментарии</li>
+            </ul>
+          </li>
+          <li class="price-plan__item slider__item best-choice">
+            Стандарт 3,99 USD
+            <ul class="price-plan__options options-list">
+              <li class="options-item option-checked">Розовый фильтр</li>
+              <li class="options-item option-checked">Смайлики</li>
+              <li class="options-item option-unchecked">Комментарии</li>
+            </ul>
+          </li>
+          <li class="price-plan__item slider__item">
+            Премиум 4,99 USD
+            <ul class="price-plan__options options-list">
+              <li class="options-item option-checked">Розовый фильтр</li>
+              <li class="options-item option-checked">Смайлики</li>
+              <li class="options-item option-checked">Комментарии</li>
+            </ul>
+          </li>
+        </ul>
+        <p class="price-plan__toggles slider">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+    </section>
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <p class="contacts__intro">Остались вопросы? Свяжитесь с нами!</p>
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <h3 class="contacts__title">Звоните</h3>
+          <p class="contacts__description">+7(812)555-66-66</p>
+        </li>
+        <li class="contacts__item">
+          <h3 class="contacts__title">Пишите</h3>
+          <p class="contacts__description">mail@hymlacademy.ru</p>
+        </li>
+        <li class="contacts__item">
+          <h3 class="contacts__title">Приезжайте в гости</h3>
+          <p class="contacts__description">ул. Большая Конюшенная, 19/8</p>
+        </li>
+      </ul>
+      <div class="contacts__map">
+        <img class="contacts__map-image" src="img/map-mobile.svg" width="320" height="200" alt="Карта">
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
