@@ -4,11 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
+    <a class="page-header__logo logo logo--header" href="index.html">
       <img class="page-header__logo-image" src="img/logotype.svg" width="76" height="25" alt="Пинк">
     </a>
     <nav class="main-nav">
@@ -30,7 +31,7 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="page-main__title">Конкурс на самое безбашенное птуешествие с Пинк</h1>
+    <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     <p class="page-main__intro">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
     <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="form__name name">
@@ -70,28 +71,28 @@
           <input class="achievement__input" type="checkbox" name="achievement" value="hotel-damage" id="hotel-damage"> Разгромил отель
         </label>
       </fieldset>
-      <fieldset class="form__contacts contacts">
-        <label class="contacts__label" for="tel">
+      <fieldset class="form__contacts form-contacts">
+        <label class="form-contacts__label" for="tel">
           Номер телефона
-          <input class="contacts__input" type="tel" name="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер, пожалуйста">
+          <input class="form-contacts__input" type="tel" name="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер, пожалуйста">
         </label>
-        <label class="contacts__label" for="email">
+        <label class="form-contacts__label" for="email">
           Адрес почты
-          <input class="contacts__input" type="email" name="email" id="email" placeholder="Введите почту *" required>
+          <input class="form-contacts__input" type="email" name="email" id="email" placeholder="Введите почту *" required>
         </label>
       </fieldset>
-      <fieldset class="form__radio application">
-        <legend class="application__legend">
+      <fieldset class="form__radio form-application">
+        <legend class="form-application__legend">
           С каким приложением путешествовали?
         </legend>
-        <label class="application__label" for="ios">
-          <input class="application__input" type="radio" name="ios" id="ios" value="ios"> Pink для iOS
+        <label class="form-application__label" for="ios">
+          <input class="form-application__input" type="radio" name="ios" id="ios" value="ios"> Pink для iOS
         </label>
-        <label class="application__label" for="android">
-          <input class="application__input" type="radio" name="android" id="android" value="android"> Pink для Android
+        <label class="form-application__label" for="android">
+          <input class="form-application__input" type="radio" name="android" id="android" value="android"> Pink для Android
         </label>
-        <label class="application__label" for="windows-phone">
-          <input class="application__input" type="radio" name="windows-phone" id="windows-phone" value="windows-phone"> Pink для Windows Phone
+        <label class="form-application__label" for="windows-phone">
+          <input class="form-application__input" type="radio" name="windows-phone" id="windows-phone" value="windows-phone"> Pink для Windows Phone
         </label>
       </fieldset>
       <fieldset class="form__textarea impressions">
@@ -100,7 +101,7 @@
         </legend>
         <textarea class="impressions__text">Можно прям в красках, не стесняясь в выражениях</textarea>
       </fieldset>
-      <input class="form__submit button" type="submit" value="Отправить форму">
+      <input class="form__submit submit-button" type="submit" value="Отправить форму">
       <p class="form__required">
         <span class="form__required--asterix">*</span>
         — обязательные поля
@@ -108,8 +109,8 @@
     </form>
   </main>
   <footer class="page-footer">
-    <a class="page-footer__logo">
-      <img class="page-footer__logo-image" src="img/logotype-mobile.svg" width="76" height="25" alt="PINK">
+    <a class="page-footer__logo logo logo--footer">
+      <img class="page-footer__logo-image" src="img/logotype-mobile.svg" width="76" height="25" alt="Пинк">
     </a>
     <div class="page-footer__social social">
       <ul class="social__list">
