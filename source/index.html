@@ -4,27 +4,28 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logotype.svg" width="76" height="25" alt="Пинк">
+    <a class="page-header__logo logo">
+      <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="76" height="25" alt="Пинк">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <ul class="main-nav__list site-list">
+      <ul class="main-nav__list site-list list">
         <li class="site-list__item site-list__item--active">
           <a>Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="photo.html">Фотографии</a>
+          <a class="site-list__link" href="photo.html">Фотографии</a>
         </li>
         <li class="site-list__item">
-          <a href="form.html">Конкурс</a>
+          <a class="site-list__link" href="form.html">Конкурс</a>
         </li>
         <li class="site-list__item">
-          <a href="#">HTML Academy</a>
+          <a class="site-list__link" href="#">HTML Academy</a>
         </li>
       </ul>
     </nav>
@@ -32,26 +33,30 @@
   <main class="page-main">
     <h1 class="visually-hidden">Мобильное приложение Пинк раскрасит ваши серые будни!</h1>
     <section class="application">
-      <img class="applcation_photo" src="http://placehold.it/320x400">
+      <div class="application__wrapper">
+        <img class="application_photo application_photo--background" src="img/bg-back-mobile@1x.jpg">
+        <img class="application_photo application_photo--hand" src="img/iphone-5-in-hand-png.png">
+      </div>
       <h2 class="visually-hidden">Скачайте мобильное приложение!</h2>
       <a class="application__download button" href="#">Скачать приложение</a>
-      <ul class="application__list">
+      <ul class="application__list list">
         <li class="application__item appication__item--ios">
-          Для iOS
+          <img class="application__logo application__logo-apple" src="img/logo-apple.svg" alt="Для iOS">
         </li>
         <li class="application__item application__item--android">
-          Для Android
+          <img class="application__logo application__logo-android" src="img/logo-android.svg" alt="Для Anroid">
         </li>
         <li class="application__item application__item--windows-phone">
-          Для Windows Phone
+          <img class="application__logo application__logo-android" src="img/logo-microsoft.svg" alt="Для Windows Phone">
         </li>
       </ul>
-      <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <p class="application__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </section>
     <section class="advantages">
       <h2 class="visually-hidden">Наши преимущества</h2>
-      <p class="advantages__intro">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
-      <ul class="advantages__list">
+      <p class="advantages__intro advantages__intro--first">Устали от серости мегаполиса?</p>
+      <p class="advantages__intro advantages__intro--second"> Нам есть, что вам предложить!</p>
+      <ul class="advantages__list list">
         <li class="advantages__item">
           <h3 class="advantages__title">Поднимает настроение</h3>
           <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
@@ -65,6 +70,7 @@
           <p class="advantages__description">Ставьте лайки, комментируйте, делитесь с друзьями и заводите новых</p>
         </li>
       </ul>
+      <img class="advantages__photo" src="img/iphone-screen-3-desktop@1x.png" </section>
     </section>
     <section class="reviews">
       <div class="reviews__wrapper slider">
@@ -73,7 +79,7 @@
           <blockquote class="reviews__item slider__item">
             <cite class="reviews__author-name">Николай Петров</cite>
             <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
-              со своей будущей женой в комментариях к выложенной фотографии!
+              со своей будущей женой в комментариях к выложенной фотографии!"
             </p>
           </blockquote>
         </div>
@@ -81,7 +87,7 @@
           <blockquote class="reviews__item slider__item">
             <cite class="reviews__author-name">Петр Николаев</cite>
             <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
-              со своей будущей женой в комментариях к выложенной фотографии!
+              со своей будущей женой в комментариях к выложенной фотографии!"
             </p>
           </blockquote>
         </div>
@@ -89,7 +95,7 @@
           <blockquote class="reviews__item slider__item">
             <cite class="reviews__author-name">Иван Шапкин</cite>
             <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
-              со своей будущей женой в комментариях к выложенной фотографии!
+              со своей будущей женой в комментариях к выложенной фотографии!"
             </p>
           </blockquote>
         </div>
@@ -103,29 +109,29 @@
     <section class="price-plan">
       <h2 class="visually-hidden">Тарифные планы</h2>
       <div class="price-plan__wrapper slider">
-        <ul class="price-plan__list slider__list">
-          <li class="price-plan__item slider-item">
+        <ul class="price-plan__list slider__list list">
+          <li class="price-plan__item slider__item">
             Эконом 2,99 USD
-            <ul class="price-plan__options options-list">
-              <li class="options-item option-unchecked">Розовый фильтр</li>
-              <li class="options-item option-unchecked">Смайлики</li>
-              <li class="options-item option-unchecked">Комментарии</li>
+            <ul class="price-plan__options options-list list">
+              <li class="options-list__item options-list__item--unchecked">Розовый фильтр</li>
+              <li class="options-list__item options-list__item--unchecked">Смайлики</li>
+              <li class="options-list__item options-list__item--unchecked">Комментарии</li>
             </ul>
           </li>
-          <li class="price-plan__item slider__item best-choice">
+          <li class="price-plan__item slider__item slider__item--best-choice">
             Стандарт 3,99 USD
-            <ul class="price-plan__options options-list">
-              <li class="options-item option-checked">Розовый фильтр</li>
-              <li class="options-item option-checked">Смайлики</li>
-              <li class="options-item option-unchecked">Комментарии</li>
+            <ul class="price-plan__options options-list list">
+              <li class="options-list__item options-list__item--checked">Розовый фильтр</li>
+              <li class="options-list__item options-list__item--checked">Смайлики</li>
+              <li class="options-list__item options-list__item--unchecked">Комментарии</li>
             </ul>
           </li>
           <li class="price-plan__item slider__item">
             Премиум 4,99 USD
-            <ul class="price-plan__options options-list">
-              <li class="options-item option-checked">Розовый фильтр</li>
-              <li class="options-item option-checked">Смайлики</li>
-              <li class="options-item option-checked">Комментарии</li>
+            <ul class="price-plan__options options-list list">
+              <li class="options-list__item options-list__item--checked">Розовый фильтр</li>
+              <li class="options-list__item options-list__item--checked">Смайлики</li>
+              <li class="options-list__item options-list__item--checked">Комментарии</li>
             </ul>
           </li>
         </ul>
@@ -139,22 +145,22 @@
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <p class="contacts__intro">Остались вопросы? Свяжитесь с нами!</p>
-      <ul class="contacts__list">
+      <ul class="contacts__list list">
         <li class="contacts__item">
-          <h3 class="contacts__title">Звоните</h3>
-          <p class="contacts__description">+7(812)555-66-66</p>
+          <h3 class="contacts__title contacts__title--call">Звоните</h3>
+          <p class="contacts__description contacts__description--call">+7(812)555-66-66</p>
         </li>
         <li class="contacts__item">
-          <h3 class="contacts__title">Пишите</h3>
-          <p class="contacts__description">mail@hymlacademy.ru</p>
+          <h3 class="contacts__title contacts__title--write">Пишите</h3>
+          <p class="contacts__description contacts__description--write">mail@hymlacademy.ru</p>
         </li>
         <li class="contacts__item">
           <h3 class="contacts__title">Приезжайте в гости</h3>
           <p class="contacts__description">ул. Большая Конюшенная, 19/8</p>
         </li>
       </ul>
-      <div class="contacts__map">
-        <img class="contacts__map-image" src="img/map-mobile.svg" width="320" height="200" alt="Карта">
+      <div class="contacts__map map">
+        <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" width="320" height="200" alt="Карта">
       </div>
     </section>
   </main>

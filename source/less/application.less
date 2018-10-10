@@ -1,0 +1,49 @@
+.application {
+  background: #283645;
+  border: 2px solid red;
+}
+
+.application__wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.application__photo {
+  background-image: url("./img/bg-back-mobile@1x.jpg");
+
+  &--hand {
+    position: absolute;
+    top: 176px;
+    left: 0;
+  }
+
+  &--background {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+.application__download {
+  display: inline-block;
+  border: 2px solid white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  padding: 20px 40px;
+  margin-top: 30px;
+}
+
+.application__list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.application__description {
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+}

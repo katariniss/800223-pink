@@ -1,0 +1,17 @@
+.form {
+  border: 2px solid red;
+}
+
+.name__label {
+  color: @red;
+  text-transform: uppercase;
+}
+
+.typein-input::placeholder {
+  .placeholder(@green);
+}
+
+.typein-input {
+  padding: 20px;
+  .placeholder(green, 20px);
+}
