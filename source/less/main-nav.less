@@ -1,5 +1,29 @@
 .main-nav {
+  width: 320px;
+  margin: 0 auto;
   font-size: 18px;
   line-height: 32px;
   text-transform: uppercase;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: 660;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    text-transform: none;
+  }
 }

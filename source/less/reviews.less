@@ -21,3 +21,29 @@
 .reviews__toggles {
   margin-bottom: 127px;
 }
+
+@media (min-width: @mobile-width) {
+  .reviews__author-age {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__text {
+    order: 1;
+  }
+
+  .reviews__author-name {
+    order: 2;
+  }
+
+  .reviews__author-age {
+    display: block;
+    order: 3;
+  }
+}

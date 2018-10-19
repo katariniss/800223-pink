@@ -47,3 +47,32 @@
   font-weight: 300;
   color: white;
 }
+
+.application__motto {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .application {
+    display: flex;
+    // width: 620px;
+  }
+
+  .application__content {
+    order: 1;
+  }
+
+  .application__wrapper {
+    order: 2;
+  }
+
+  .application__motto {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  // .application {
+  //   width: 940px;
+  // }
+}

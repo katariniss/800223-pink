@@ -5,3 +5,16 @@
 .page-footer__logo-image {
   margin-top: 64px;
 }
+
+@media (min-width: @mobile-width) {
+  .page-footer {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-around;
+  }
+}
