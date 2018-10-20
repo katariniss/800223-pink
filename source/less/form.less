@@ -15,3 +15,98 @@
   padding: 20px;
   .placeholder(@green, 20px);
 }
+
+@media (min-width: @mobile-width) {
+  .name__input {
+    width: 240px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__name {
+    order: 1;
+  }
+
+  .form__radio {
+    order: 4;
+  }
+
+  .form-contacts {
+    order: 3;
+  }
+
+  .form__checkbox {
+    order: 2;
+  }
+
+  .form__textarea {
+    order: 5;
+  }
+
+  .form__submit--wrapper {
+    order: 6;
+  }
+
+  .impressions__text {
+    width: 280px;
+    height: 200px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__submit--wrapper {
+    display: flex;
+    justify-content: space-around;
+    order: 6;
+  }
+
+  .form__name {
+    order: 1;
+  }
+
+  .form__radio {
+    order: 2;
+  }
+
+  .form-contacts {
+    order: 3;
+  }
+
+  .form__checkbox {
+    order: 4;
+  }
+
+  .form__textarea {
+    order: 5;
+  }
+
+  .impressions__text {
+    width: 500px;
+    height: 190px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__name,
+  .form__radio {
+    width: 433px;
+  }
+
+  .form__wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .impressions__text {
+    width: 820px;
+    height: 126px;
+  }
+}
