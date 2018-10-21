@@ -29,3 +29,44 @@
 .photos__text--time {
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet-width) {
+  .photos__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photos__item {
+    min-width: 300px;
+    min-height: 456px;
+  }
+
+  .photos__texts {
+    display: flex;
+    flex-wrap: wrap;
+    width: 620px;
+  }
+
+  .photos__text--author {
+    order: 1;
+    margin-right: auto;
+  }
+
+  .photos__text--description {
+    order: 3;
+  }
+
+  .photos__text--like {
+    order: 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos__item {
+    min-height: 555px;
+  }
+
+  .photos__texts {
+    width: 940px;
+  }
+}

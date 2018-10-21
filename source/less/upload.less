@@ -21,14 +21,57 @@
 
 .button__submit {
   color: @red;
-  font-style: 18px;
+  font-size: 18px;
   line-height: 18px;
   border: 2px solid @red;
+  margin-bottom: 12px;
 }
 
 .button__cancel {
-  margin-top: 12px;
-  font-style: 18px;
+  font-size: 18px;
   line-height: 18px;
   border: 2px solid gray;
+}
+
+@media (min-width: @mobile-width) {
+  .range-crop,
+  .range-contrast {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .upload {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .upload__list {
+    flex-direction: column;
+  }
+
+  .upload__range {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .upload__wrapper {
+    display: flex;
+  }
+
+  .upload__item--wrapper {
+    display: flex;
+  }
+
+  .range-crop,
+  .range-contrast {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .upload__button {
+    display: flex;
+    justify-content: space-between;
+  }
 }

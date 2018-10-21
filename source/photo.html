@@ -37,10 +37,10 @@
     <h1 class="page-main__title">Фотографии пользователей</h1>
     <p class="page-main__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
     <section class="page-main__photos photos">
-      <ul class="photos__list list">
-        <li class="photos__item">
-          <img class="photos__image photos__image--panorama" src="img/panorama-mobile@1x.jpg">
-          <p class="photos__text">
+      <div class="photos__panorama">
+        <img class="photos__image" src="img/panorama-mobile@1x.jpg">
+        <div class="photos__texts">
+          <p class="photos__text photos__text--author">
             <span class="photos__text photos__text--name">Анна</span>
             <span class="photos__text photos__text--time">(5 минут назад)</span>
           </p>
@@ -48,7 +48,9 @@
             Прыгать или нет? Напишите в комментарии своей совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
           </p>
           <p class="photos__text photos__text--like">Нравится: 215</p>
-        </li>
+        </div>
+      </div>
+      <ul class="photos__list list">
         <li class="photos__item">
           <img class="photos__image" src="img/photo-car-mobile@1x.jpg">
           <p class="photos__text">
@@ -121,29 +123,47 @@
       </p>
     </section>
     <section class="page-main__upload upload">
-      <img class="upload__image" src="img/photo-road-mobile@1x.jpg">
-      <ul class="upload__list list">
-        <li class="upload-item">
-          <img class="upload-item--crop" src="img/icon-editor-crop.svg" alt="Обрезка">
-        </li>
-        <li class="upload-item upload-item--fill">
-          <img class="upload-item--crop" src="img/icon-editor-fill.svg" alt="Заливка">
-        </li>
-        <li class="upload-item upload-item--contrast">
-          <img class="upload-item--crop" src="img/icon-editor-contrast.svg" alt="Контраст">
-        </li>
-      </ul>
-      <div class="upload__range range">
-        <input class="range__slider" type="range" min="1" max="100" value="50" id="myRange">
+      <div class="upload__leftcol">
+        <img class="upload__image" src="img/photo-road-mobile@1x.jpg">
       </div>
-      <ul class="upload__button button button__list list">
-        <li class="button__item">
-          <button class="button__submit" type="submit">Запостить</button>
-        </li>
-        <li class="button__item">
-          <button class="button__cancel" type="reset" disabled>Отмена</button>
-        </li>
-      </ul>
+      <div class="upload__rightcol">
+        <div class="upload__wrapper">
+          <ul class="upload__list list">
+            <li class="upload__item">
+              <div class="upload__item--wrapper">
+                <img class="upload__item--crop" src="img/icon-editor-crop.svg" alt="Обрезка">
+                <div class="upload__item--range-line range-crop">
+                  <button class="upload__item--range-circle"></button>
+                </div>
+              </div>
+            </li>
+            <li class="upload__item upload__item--fill">
+              <div class="upload__item--wrapper">
+                <img class="upload__item--crop" src="img/icon-editor-fill.svg" alt="Заливка">
+                <div class="upload__item--range-line range-fill">
+                  <button class="upload__item--range-circle"></button>
+                </div>
+              </div>
+            </li>
+            <li class="upload__item upload__item--contrast">
+              <div class="upload__item--wrapper">
+                <img class="upload__item--crop" src="img/icon-editor-contrast.svg" alt="Контраст">
+                <div class="upload__item--range-line range-contrast">
+                  <button class="upload__item--range-circle"></button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <ul class="upload__button button button__list list">
+          <li class="button__item">
+            <button class="button__submit" type="submit">Запостить</button>
+          </li>
+          <li class="button__item">
+            <button class="button__cancel" type="reset" disabled>Отмена</button>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
