@@ -9,6 +9,21 @@
 .impressions__text {
   margin-top: 19px;
   padding: 0;
+
+  @media (min-width: @mobile-width) {
+    width: 280px;
+    height: 200px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 500px;
+    height: 190px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 820px;
+    height: 126px;
+  }
 }
 
 .submit-button {

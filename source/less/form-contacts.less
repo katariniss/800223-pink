@@ -16,6 +16,15 @@
   padding-top: 40px;
 }
 
+.form-contacts__input::placeholder {
+  .placeholder(@green, 20px);
+}
+
+.form-contacts__input {
+  padding: 20px;
+  .placeholder(@green, 20px);
+}
+
 @media (min-width: @mobile-width) {
   .form-contacts__legend {
     display: none;
