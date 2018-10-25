@@ -7,16 +7,40 @@
   font-size: 24px;
 }
 
+.contacts__list {
+  margin-top: 44px;
+}
+
 .contacts__title {
   font-weight: 700;
   margin-bottom: 0;
-
-  &--call {
-    margin-top: 44px;
-  }
 }
 
 .contacts__description {
   color: #d22856;
   margin-top: 11px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .contacts__item {
+    width: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    width: 940px;
+    margin: auto;
+  }
+
+  .contacts__list {
+    display: flex;
+    justify-content: space-around;
+  }
 }

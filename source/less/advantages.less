@@ -31,3 +31,52 @@
 .advantages__photo {
   margin-top: 30px;
 }
+
+.advantages__list {
+  display: inline-block;
+
+  @media (min-width: @mobile-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+@media (min-width: @mobile-width) {
+  .advantages__duration {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__wrapper {
+    display: flex;
+  }
+
+  .advantages__photo {
+    order: 1;
+  }
+
+  .advantages__list {
+    order: 2;
+  }
+
+  .advantages__duration {
+    display: flex;
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__wrapper {
+    margin: auto;
+    width: 940px;
+  }
+
+  .advantages__duration {
+    width: 940px;
+    margin: auto;
+  }
+}

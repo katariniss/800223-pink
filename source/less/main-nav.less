@@ -1,5 +1,31 @@
 .main-nav {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
   font-size: 18px;
   line-height: 32px;
   text-transform: uppercase;
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    width: 660px;
+    display: flex;
+    justify-content: space-around;
+    text-transform: none;
+    margin-right: 128px;
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: space-between;
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
 }

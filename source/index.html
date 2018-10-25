@@ -4,11 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="page-header">Í
     <a class="page-header__logo logo">
       <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="76" height="25" alt="Пинк">
     </a>
@@ -33,44 +35,66 @@
   <main class="page-main">
     <h1 class="visually-hidden">Мобильное приложение Пинк раскрасит ваши серые будни!</h1>
     <section class="application">
-      <div class="application__wrapper">
-        <img class="application_photo application_photo--background" src="img/bg-back-mobile@1x.jpg">
-        <img class="application_photo application_photo--hand" src="img/iphone-5-in-hand-png.png">
+      <div class="application__container">
+        <div class="application__wrapper">
+          <!-- <img class="application_photo application_photo--background" src="img/bg-back-mobile@1x.jpg"> -->
+          <img class="application_photo application_photo--hand" src="img/iphone-5-in-hand-png.png">
+        </div>
+        <div class="application__content">
+          <h2 class="application__motto">Взгляните на жизнь иначе!</h2>
+          <a class="application__download button" href="#">Скачать приложение</a>
+          <ul class="application__list list">
+            <li class="application__item appication__item--ios">
+              <a class="application__link" href="#">
+                <img class="application__logo application__logo-apple" src="img/logo-apple.svg" alt="Для iOS">
+              </a>
+            </li>
+            <li class="application__item application__item--android">
+              <a class="application__link" href="#">
+                <img class="application__logo application__logo-android" src="img/logo-android.svg" alt="Для Anroid">
+              </a>
+            </li>
+            <li class="application__item application__item--windows-phone">
+              <a class="application__link" href="#">
+                <img class="application__logo application__logo-android" src="img/logo-microsoft.svg" alt="Для Windows Phone">
+              </a>
+            </li>
+          </ul>
+          <p class="application__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </div>
-      <h2 class="visually-hidden">Скачайте мобильное приложение!</h2>
-      <a class="application__download button" href="#">Скачать приложение</a>
-      <ul class="application__list list">
-        <li class="application__item appication__item--ios">
-          <img class="application__logo application__logo-apple" src="img/logo-apple.svg" alt="Для iOS">
-        </li>
-        <li class="application__item application__item--android">
-          <img class="application__logo application__logo-android" src="img/logo-android.svg" alt="Для Anroid">
-        </li>
-        <li class="application__item application__item--windows-phone">
-          <img class="application__logo application__logo-android" src="img/logo-microsoft.svg" alt="Для Windows Phone">
-        </li>
-      </ul>
-      <p class="application__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </section>
     <section class="advantages">
       <h2 class="visually-hidden">Наши преимущества</h2>
       <p class="advantages__intro advantages__intro--first">Устали от серости мегаполиса?</p>
       <p class="advantages__intro advantages__intro--second"> Нам есть, что вам предложить!</p>
-      <ul class="advantages__list list">
-        <li class="advantages__item">
-          <h3 class="advantages__title">Поднимает настроение</h3>
-          <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Меняет мир вокруг</h3>
-          <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текствовой подписью, чтобы усилить эффект</p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Заводит новых друзей</h3>
-          <p class="advantages__description">Ставьте лайки, комментируйте, делитесь с друзьями и заводите новых</p>
-        </li>
-      </ul>
-      <img class="advantages__photo" src="img/iphone-screen-3-desktop@1x.png" </section>
+      <div class="advantages__wrapper">
+        <ul class="advantages__list list">
+          <li class="advantages__item">
+            <h3 class="advantages__title">Поднимает настроение</h3>
+            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Меняет мир вокруг</h3>
+            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текствовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Заводит новых друзей</h3>
+            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <img class="advantages__photo" src="img/iphone-screen-3-desktop@1x.png">
+      </div>
+      <div class="advantages__duration duration">
+        <img class="duration__timer" src="img/icon-timer.svg" alt="Таймер" width="299px" height="343px">
+        <div class="duration__textblock">
+          <h3 class="duration__title">Эффект на 24 часа!</h3>
+          <p class="dutaion__text">
+            Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+          </p>
+          <a class="duration__link" href="#">Узнать больше об исследовании</a>
+        </div>
+      </div>
     </section>
     <section class="reviews">
       <div class="reviews__wrapper slider">
@@ -78,22 +102,7 @@
         <div class="reviews__list slider__list">
           <blockquote class="reviews__item slider__item">
             <cite class="reviews__author-name">Николай Петров</cite>
-            <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
-              со своей будущей женой в комментариях к выложенной фотографии!"
-            </p>
-          </blockquote>
-        </div>
-        <div class="reviews__list slider__list">
-          <blockquote class="reviews__item slider__item">
-            <cite class="reviews__author-name">Петр Николаев</cite>
-            <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
-              со своей будущей женой в комментариях к выложенной фотографии!"
-            </p>
-          </blockquote>
-        </div>
-        <div class="reviews__list slider__list">
-          <blockquote class="reviews__item slider__item">
-            <cite class="reviews__author-name">Иван Шапкин</cite>
+            <p class="reviews__author-age">25 лет, водитель трамвая</p>
             <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
               со своей будущей женой в комментариях к выложенной фотографии!"
             </p>
@@ -109,32 +118,68 @@
     <section class="price-plan">
       <h2 class="visually-hidden">Тарифные планы</h2>
       <div class="price-plan__wrapper slider">
-        <ul class="price-plan__list slider__list list">
-          <li class="price-plan__item slider__item">
-            Эконом 2,99 USD
-            <ul class="price-plan__options options-list list">
-              <li class="options-list__item options-list__item--unchecked">Розовый фильтр</li>
-              <li class="options-list__item options-list__item--unchecked">Смайлики</li>
-              <li class="options-list__item options-list__item--unchecked">Комментарии</li>
-            </ul>
-          </li>
-          <li class="price-plan__item slider__item slider__item--best-choice">
-            Стандарт 3,99 USD
-            <ul class="price-plan__options options-list list">
-              <li class="options-list__item options-list__item--checked">Розовый фильтр</li>
-              <li class="options-list__item options-list__item--checked">Смайлики</li>
-              <li class="options-list__item options-list__item--unchecked">Комментарии</li>
-            </ul>
-          </li>
-          <li class="price-plan__item slider__item">
-            Премиум 4,99 USD
-            <ul class="price-plan__options options-list list">
-              <li class="options-list__item options-list__item--checked">Розовый фильтр</li>
-              <li class="options-list__item options-list__item--checked">Смайлики</li>
-              <li class="options-list__item options-list__item--checked">Комментарии</li>
-            </ul>
-          </li>
-        </ul>
+        <div class="price-plan__table">
+          <ul class="price-plan__list slider__list list">
+            <li class="price-plan__item price-plan__item--no-heading slider__item">
+              <ul class="price-plan__options no-heading options-list list">
+                <li class="price-plan__option">Розовый фильтр</li>
+                <li class="price-plan__option">Смайлики</li>
+                <li class="price-plan__option">Комментарии</li>
+              </ul>
+            </li>
+            <li class="price-plan__item slider__item">
+              База 1,99 USD
+              <ul class="price-plan__options options-list list">
+                <li class="price-plan__option price-plan__option--unchecked">
+                  <span class="price-plan__option--choice">Розовый фильтр</span>
+                  <span class="price-plan__option--check">V</span>
+                </li>
+                <li class="price-plan__option price-plan__option--unchecked">
+                  <span class="price-plan__option--choice">Смайлики</span>
+                  <span class="price-plan__option--check">X</span>
+                </li>
+                <li class="price-plan__option price-plan__option--unchecked">
+                  <span class="price-plan__option--choice">Комментарии</span>
+                  <span class="price-plan__option--check">X</span>
+                </li>
+              </ul>
+            </li>
+            <li class="price-plan__item price-plan__item--best-choice slider__item">
+              Стандарт 3,99 USD
+              <ul class="price-plan__options options-list list">
+                <li class="price-plan__option price-plan__option--checked">
+                  <span class="price-plan__option--choice">Розовый фильтр</span>
+                  <span class="price-plan__option--check">V</span>
+                </li>
+                <li class="price-plan__option price-plan__option--checked">
+                  <span class="price-plan__option--choice">Смайлики</span>
+                  <span class="price-plan__option--check">V</span>
+                </li>
+                <li class="price-plan__option price-plan__option--unchecked">
+                  <span class="price-plan__option--choice">Комментарии</span>
+                  <span class="price-plan__option--check">X</span>
+                </li>
+              </ul>
+            </li>
+            <li class="price-plan__item slider__item">
+              Анлим 9,99 USD
+              <ul class="price-plan__options options-list list">
+                <li class="price-plan__option price-plan__option--checked">
+                  <span class="price-plan__option--choice">Розовый фильтр</span>
+                  <span class="price-plan__option--check">V</span>
+                </li>
+                <li class="price-plan__option price-plan__option--checked">
+                  <span class="price-plan__option--choice">Смайлики</span>
+                  <span class="price-plan__option--check">V</span>
+                </li>
+                <li class="price-plan__option price-plan__option--checked">
+                  <span class="price-plan__option--choice">Комментарии</span>
+                  <span class="price-plan__option--check">V</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
         <p class="price-plan__toggles slider">
           <button class="slider__toggle" type="button">1</button>
           <button class="slider__toggle" type="button">2</button>
@@ -164,6 +209,36 @@
       </div>
     </section>
   </main>
+  <footer class="page-footer">
+    <a class="page-footer__logo logo logo--footer" href="index.html">
+      <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="150" height="40" alt="Пинк">
+    </a>
+    <div class="page-footer__social social">
+      <ul class="social__list list">
+        <li class="social__item">
+          <a class="social__link" href="https://twitter.com/htmlacademy">
+            <img class="social__link--twitter" src="img/icon-twitter.svg" alt="Мы в Твиттере">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://www.facebook.com/htmlacademy">
+            <img class="social__link--facebook" src="img/icon-facebook.svg" alt="Мы в Фейсбуке">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://www.youtube.com/htmlacademy">
+            <img class="social__link--youtube" src="img/icon-youtube.svg" alt="Мы на Ютубе">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано:</b>
+      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="copyright__link--academy" src="img/logo-htmlacademy.svg" alt="HTML Academy">
+      </a>
+    </div>
+  </footer>
 </body>
 
 </html>

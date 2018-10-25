@@ -5,3 +5,27 @@
 .page-footer__logo-image {
   margin-top: 64px;
 }
+
+.page-footer__copyright {
+  margin-top: 40px;
+}
+
+@media (min-width: @mobile-width) {
+  .page-footer {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: 940px;
+    margin: 0 auto;
+  }
+}

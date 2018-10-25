@@ -9,18 +9,19 @@
 .impressions__text {
   margin-top: 19px;
   padding: 0;
-}
 
-.submit-button {
-  background-color: #2aab6d;
-  margin-top: 52px;
-  font-size: 18px;
-  line-height: 30px;
-}
+  @media (min-width: @mobile-width) {
+    width: 280px;
+    height: 200px;
+  }
 
-.form__required {
-  margin-top: 46px;
-  margin-bottom: 0;
-  font-size: 14px;
-  line-height: 30px;
+  @media (min-width: @tablet-width) {
+    width: 500px;
+    height: 190px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 820px;
+    height: 126px;
+  }
 }

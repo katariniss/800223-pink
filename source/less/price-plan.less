@@ -7,3 +7,54 @@
   padding-bottom: 50px;
   background-color: #f2f2f2;
 }
+
+@media (min-width: @mobile-width) {
+  .price-plan__wrapper {
+    position: relative;
+  }
+
+  .price-plan__list {
+    width: 300%;
+  }
+
+  .price-plan__table {
+    overflow: hidden;
+  }
+
+  .price-plan__item {
+    float: left;
+    // width: 280px;
+    // height: 280px;
+  }
+  // .price-plan__list {
+  //   display: flex;
+  // }
+  .price-plan__item--no-heading {
+    display: none;
+  }
+
+  .price-plan__option {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .price-plan {
+    width: 940px;
+    margin: auto;
+  }
+
+  .price-plan__list {
+    display: flex;
+  }
+
+  .price-plan__item--no-heading {
+    display: block;
+    padding-top: 20px;
+  }
+
+  .price-plan__option--choice {
+    display: none;
+  }
+}
