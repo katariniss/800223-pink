@@ -24,12 +24,17 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #000000;
+  height: 70px;
 }
 
 @media (min-width: @tablet-width) {
   .page-header__logo {
     height: 41px;
     width: 150px;
+  }
+
+  .page-header__wrapper {
+    height: 90px;
   }
 }
 
@@ -50,5 +55,121 @@
     height: 41px;
     margin: auto;
     margin-left: 130px;
+  }
+}
+
+.page-header__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+
+  display: block;
+  width: 70px;
+  height: 50px;
+
+  background-color: @dark;
+
+  cursor: pointer;
+  border: none;
+  margin-right: 19px;
+  margin-top: 14px;
+  outline: none;
+}
+
+.page-header--closed .page-header__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 15px;
+  left: 17px;
+
+  width: 52px;
+  height: 3px;
+
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+}
+
+.page-header--closed .page-header__toggle:hover::before {
+  background-color: #d22856;
+  box-shadow: 0 8px 0 0 #d22856, 0 16px 0 0 #d22856;
+}
+
+.page-header--closed .page-header__toggle:active::before {
+  background-color: #d22856;
+  box-shadow: 0 8px 0 0 #d22856, 0 16px 0 0 #d22856;
+  opacity: 0.3;
+}
+
+.page-header--opened .page-header__toggle {
+  top: 0;
+  right: 0;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+
+    width: 32px;
+    height: 4px;
+
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: #d22856;
+  }
+
+  &:active::before,
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: space-between;
+}
+
+@media (max-width: @tablet-width-only) {
+  .page-header--closed .page-header__main-nav {
+    display: none;
+  }
+
+  .page-header--nojs .page-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    height: 106px;
+    margin-top: -5px;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__wrapper {
+    border: none;
+  }
+
+  .page-header__logo {
+    margin-top: 26px;
   }
 }

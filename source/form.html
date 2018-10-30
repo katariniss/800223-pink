@@ -10,24 +10,28 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <a class="page-header__logo logo logo--header" href="index.html">
-      <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="76" height="25" alt="Пинк">
-    </a>
+  <header class="page-header page-header--opened page-header--nojs">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo logo">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="76" height="25" alt="Пинк">
+      </a>
+      <button class="page-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <ul class="main-nav__list site-list list">
-        <li class="site-list__item">
-          <a href="index.html">Главная</a>
+        <li class="site-list__item site-list__item--active">
+          <a class="site-list__link" href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="photo.html">Фотографии</a>
+          <a class="site-list__link" href="photo.html">Фотографии</a>
         </li>
         <li class="site-list__item site-list__item--active">
-          <a>Конкурс</a>
+          <a class="site-list__link">Конкурс</a>
         </li>
         <li class="site-list__item">
-          <a href="#">HTML Academy</a>
+          <a class="site-list__link" href="#">HTML Academy</a>
         </li>
       </ul>
     </nav>
@@ -187,6 +191,22 @@
       </a>
     </div>
   </footer>
+  <script>
+    var navMain = document.querySelector('.page-header');
+    var navToggle = document.querySelector('.page-header__toggle');
+
+    navMain.classList.remove('page-header--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('page-header--closed')) {
+        navMain.classList.remove('page-header--closed');
+        navMain.classList.add('page-header--opened');
+      } else {
+        navMain.classList.add('page-header--closed');
+        navMain.classList.remove('page-header--opened');
+      }
+    });
+  </script>
 </body>
 
 </html>
