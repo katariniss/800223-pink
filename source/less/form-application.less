@@ -1,6 +1,6 @@
 .form-application {
   background-color: #f2f2f2;
-  border: 2px solid red;
+  // border: 2px solid red;
 
   @media (min-width: @tablet-width) {
     background-color: transparent;
@@ -17,4 +17,63 @@
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 50px;
+}
+
+.form-application__list {
+  padding-left: 0;
+}
+
+.form-application__label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.form-application__input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.form-application__checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 37px;
+  height: 36px;
+  border: solid 2px #e5e5e5;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.form-application__label:hover input ~ .form-application__checkmark {
+  border: solid 2px black;
+}
+
+.form-application__label:active input ~ .form-application__checkmark {
+  border: solid 2px #d22856;
+}
+
+.form-application__label:active input:checked ~ .form-application__checkmark::after {
+  display: none;
+}
+
+.form-application__checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.form-application__label input:checked ~ .form-application__checkmark::after {
+  display: block;
+}
+
+.form-application__label .form-application__checkmark::after,
+.form-application__label:active input ~ .form-application__checkmark::after {
+  top: 10px;
+  left: 10px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #d22856;
 }

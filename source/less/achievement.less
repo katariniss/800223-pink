@@ -10,6 +10,16 @@
   }
 }
 
+.achievement__list {
+  padding: 0;
+  padding-left: 20px;
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 60px;
+  }
+}
+
 .achievement__legend {
   color: @red;
   text-transform: uppercase;
@@ -19,6 +29,64 @@
 .achievement__item {
   font-size: 18px;
   margin-top: 46px;
+}
+
+.achievement__label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 60px;
+  padding-top: 10px;
+}
+
+.achievement__input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.achievement__checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border: solid 2px #e5e5e5;
+  background-color: #ffffff;
+}
+
+.achievement__label:hover input ~ .achievement__checkmark {
+  border: solid 2px black;
+}
+
+.achievement__checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.achievement__label input:checked ~ .achievement__checkmark::after {
+  display: block;
+}
+
+.achievement__label:active input ~ .achievement__checkmark {
+  border: solid 2px #d22856;
+}
+
+.achievement__label:active input:checked ~ .achievement__checkmark::after {
+  display: none;
+}
+
+.achievement__label .achievement__checkmark::after {
+  left: 12px;
+  top: 1px;
+  width: 12px;
+  height: 24px;
+  border: solid 2px #d22856;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 
 @media (min-width: @desktop-width) {

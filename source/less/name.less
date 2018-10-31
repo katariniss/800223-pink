@@ -1,6 +1,18 @@
+.name__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
 .name__label {
   color: @red;
   text-transform: uppercase;
+}
+
+.name__label--text {
+  display: block;
+  text-align: left;
+  margin-left: 50px;
 }
 
 .name__input::placeholder {
@@ -9,11 +21,13 @@
 
 .name__input {
   padding: 20px;
+  margin-top: 15px;
+  margin-bottom: 26px;
   .placeholder(@green, 20px);
 }
 
 @media (min-width: @mobile-width) {
   .name__input {
-    width: 240px;
+    width: 280px;
   }
 }
