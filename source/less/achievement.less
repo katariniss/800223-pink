@@ -68,6 +68,7 @@
 }
 
 .achievement__label input:checked ~ .achievement__checkmark::after {
+  content: "";
   display: block;
 }
 
@@ -75,11 +76,8 @@
   border: solid 2px #d22856;
 }
 
-.achievement__label:active input:checked ~ .achievement__checkmark::after {
-  display: none;
-}
-
 .achievement__label .achievement__checkmark::after {
+  content: "";
   left: 12px;
   top: 1px;
   width: 12px;
