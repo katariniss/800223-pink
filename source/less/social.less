@@ -4,22 +4,49 @@
   margin-top: 40px;
   padding-left: 72px;
   padding-right: 72px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 67px;
+    padding-right: 86px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 82px;
+    padding-right: 73px;
+  }
 }
 
 .social__link {
-  border: solid 2px grey;
+  border: solid 3px #eaebed;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   display: block;
   padding: 0;
 
-  &--twitter,
+  &--twitter {
+    padding: 15px;
+  }
+
   &--youtube {
-    padding: 17px;
+    padding: 16px;
+    padding-left: 18px;
   }
 
   &--facebook {
-    padding: 15px;
+    padding: 13px;
   }
+}
+
+.social__link:hover {
+  border: solid 3px black;
+}
+
+.social__link:active {
+  border: solid 3px #eaebed;
+}
+
+
+.social__link:active path {
+  fill: #f1becc;
 }
