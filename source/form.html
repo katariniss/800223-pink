@@ -35,35 +35,40 @@
         </li>
       </ul>
     </nav>
+    <div class="main-nav__background">
+    </div>
+    <!-- <img class="page-main__intro--background" src="/img/bg-back-mobile@1x.jpg"> -->
   </header>
   <main class="page-main">
     <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-    <p class="page-main__intro">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+    <p class="page-main__intro">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+    </p>
     <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
-      <div class="form__wrapper">
-        <fieldset class="form__name name">
-          <ul class="name__list list">
-            <li class="name__item">
-              <label class="name__label" for="last-name">
-                <span class="name__label--text">Фамилия:</span>
-                <input class="name__input typein-input" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию *" required>
-              </label>
-            </li>
-            <li class="name__item">
-              <label class="name__label" for="first-name">
-                <span class="name__label--text">Имя:</span>
-                <input class="name__input typein-input" type="text" name="last-name" id="first-name" placeholder="Введите ваше имя *" required>
-              </label>
-            </li>
-            <li class="name__item">
-              <label class="name__label" for="middle-name">
-                <span class="name__label--text">Отчество:</span>
-                <input class="name__input typein-input" type="text" name="last-name" id="middle-name" placeholder="Ну и отчество тоже">
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form__radio form-application">
+      <!-- <div class="form__wrapper"> -->
+      <fieldset class="form__name name">
+        <ul class="name__list list">
+          <li class="name__item">
+            <label class="name__label" for="last-name">
+              <span class="name__label--text">Фамилия:</span>
+              <input class="name__input typein-input" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию *" required>
+            </label>
+          </li>
+          <li class="name__item">
+            <label class="name__label" for="first-name">
+              <span class="name__label--text">Имя:</span>
+              <input class="name__input typein-input" type="text" name="last-name" id="first-name" placeholder="Введите ваше имя *" required>
+            </label>
+          </li>
+          <li class="name__item">
+            <label class="name__label" for="middle-name">
+              <span class="name__label--text">Отчество:</span>
+              <input class="name__input typein-input" type="text" name="last-name" id="middle-name" placeholder="Ну и отчество тоже">
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <div class="form__radio">
+        <fieldset class="form__radio--fieldset form-application">
           <legend class="form-application__legend">
             С каким приложением путешествовали?
           </legend>
@@ -89,50 +94,53 @@
           </ul>
         </fieldset>
       </div>
-      <fieldset class="form__checkbox achievement">
-        <legend class="achievement__legend">
-          Ваши безбашенные достижения в путешествии
-        </legend>
-        <ul class="achievement__list list">
-          <li class="achievement__item">
-            <label class="achievement__label" for="shark-selfie">
-              <input class="achievement__input visually-hidden" type="checkbox" name="achievement" value="shark-selfie" id="shark-selfie"
-                checked> Сделал селфи с акулой
-              <span class="achievement__checkmark"></span>
-            </label>
-          </li>
-          <li class="achievement__item">
-            <label class="achievement__label" for="sunburn">
-              <input class="achievement__input visually-hidden" type="checkbox" name="achievement" value="sunburn" id="sunburn" checked> Обгорел на пляже
-              <span class="achievement__checkmark"></span>
-            </label>
-          </li>
-          <li class="achievement__item">
-            <label class="achievement__label" for="chuck-norris">
-              <input class="achievement__input visually-hidden" type="checkbox" name="achievement" value="chuck-norris" id="chuck-norris"> Видел Чака Норриса
-              <span class="achievement__checkmark"></span>
-            </label>
-          </li>
-          <li class="achievement__item">
-            <label class="achievement__label" for="souvenirs">
-              <input class="achievement__input visually-hidden" type="checkbox" name="achievement" value="souvenirs" id="souvenirs"> Накупил сувениров
-              <span class="achievement__checkmark"></span>
-            </label>
-          </li>
-          <li class="achievement__item">
-            <label class="achievement__label" for="tower">
-              <input class="achievement__input visually-hidden" type="checkbox" name="achievement" value="tower" id="tower" checked> Удержал башню
-              <span class="achievement__checkmark"></span>
-            </label>
-          </li>
-          <li class="achievement__item">
-            <label class="achievement__label" for="hotel-damage">
-              <input class="achievement__input visually-hidden" type="checkbox" name="achievement" value="hotel-damage" id="hotel-damage"> Разгромил отель
-              <span class="achievement__checkmark"></span>
-            </label>
-          </li>
-        </ul>
-      </fieldset>
+      <!-- </div> -->
+      <div class="form__checkbox">
+        <fieldset class="form__checkbox--fieldset achievement">
+          <legend class="achievement__legend">
+            <span>Ваши безбашенные достижения в путешествии</span>
+          </legend>
+          <ul class="achievement__list list">
+            <li class="achievement__item">
+              <label class="achievement__label" for="shark-selfie">
+                <input class="achievement__input visually-hidden" type="checkbox" name="achievement" value="shark-selfie" id="shark-selfie"
+                  checked> Сделал селфи с акулой
+                <span class="achievement__checkmark"></span>
+              </label>
+            </li>
+            <li class="achievement__item">
+              <label class="achievement__label" for="sunburn">
+                <input class="achievement__input visually-hidden" type="checkbox" name="achievement" value="sunburn" id="sunburn" checked> Обгорел на пляже
+                <span class="achievement__checkmark"></span>
+              </label>
+            </li>
+            <li class="achievement__item">
+              <label class="achievement__label" for="chuck-norris">
+                <input class="achievement__input visually-hidden" type="checkbox" name="achievement" value="chuck-norris" id="chuck-norris"> Видел Чака Норриса
+                <span class="achievement__checkmark"></span>
+              </label>
+            </li>
+            <li class="achievement__item">
+              <label class="achievement__label" for="souvenirs">
+                <input class="achievement__input visually-hidden" type="checkbox" name="achievement" value="souvenirs" id="souvenirs"> Накупил сувениров
+                <span class="achievement__checkmark"></span>
+              </label>
+            </li>
+            <li class="achievement__item">
+              <label class="achievement__label" for="tower">
+                <input class="achievement__input visually-hidden" type="checkbox" name="achievement" value="tower" id="tower" checked> Удержал башню
+                <span class="achievement__checkmark"></span>
+              </label>
+            </li>
+            <li class="achievement__item">
+              <label class="achievement__label" for="hotel-damage">
+                <input class="achievement__input visually-hidden" type="checkbox" name="achievement" value="hotel-damage" id="hotel-damage"> Разгромил отель
+                <span class="achievement__checkmark"></span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
       <fieldset class="form__contacts form-contacts">
         <legend class="form-contacts__legend">
           Контактная информация
@@ -171,10 +179,11 @@
       </div>
     </form>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--main">
     <a class="page-footer__logo logo logo--footer" href="index.html">
-      <svg class="page-footer__logo--icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+      <svg class="page-footer__logo--icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375"
+        xml:space="preserve">
         <g>
           <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"
           />

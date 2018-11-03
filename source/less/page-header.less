@@ -2,9 +2,7 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  background: @dark;
   color: white;
-  border: 2px solid red;
 }
 
 .page-header__logo {
@@ -21,6 +19,7 @@
 }
 
 .page-header__wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #000000;
@@ -58,6 +57,15 @@
   }
 }
 
+.page-header--closed .page-header__wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.page-header--opened .page-header__wrapper {
+  background-color: @dark;
+}
+
+
 .page-header__toggle {
   position: absolute;
   top: 0;
@@ -67,8 +75,7 @@
   display: block;
   width: 70px;
   height: 50px;
-
-  background-color: @dark;
+  background-color: rgba(0, 0, 0, 0);
 
   cursor: pointer;
   border: none;
