@@ -1,5 +1,14 @@
 .form__contacts {
   padding-top: 0;
+
+  @media (min-width: @tablet-width) {
+    border: 2px solid #e5e5e5;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 62px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 }
 
 .form-contacts__label {
@@ -19,6 +28,12 @@
   color: @red;
   text-transform: uppercase;
   padding-top: 40px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-right: 34px;
+    padding-left: 34px;
+  }
 }
 
 .form-contacts__input::placeholder {
@@ -50,7 +65,7 @@
   }
 
   .form-contacts__input {
-    width: 500px;
+    width: 460px;
   }
 
   .form-contacts__label {
@@ -64,6 +79,11 @@
 
   .form-contacts__label-wrapper {
     order: 2;
+    padding-bottom: 40px;
+  }
+
+  .form-contacts__list {
+    margin-bottom: 0;
   }
 }
 

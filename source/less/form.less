@@ -19,9 +19,15 @@
 
 .form__required {
   margin-top: 46px;
-  margin-bottom: 0;
+  margin-bottom: 64px;
   font-size: 14px;
   line-height: 30px;
+  text-transform: uppercase;
+
+
+  &--asterix {
+    color: @red;
+  }
 }
 
 .form__submit {
@@ -29,6 +35,15 @@
   margin-top: 52px;
   font-size: 18px;
   line-height: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  width: 280px;
+  height: 63px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 67px;
+  }
 }
 
 @media (min-width: @mobile-width) {
@@ -80,6 +95,7 @@
 
   .form__radio {
     order: 2;
+    background: transparent;
   }
 
   .form__contacts {
@@ -88,10 +104,22 @@
 
   .form__checkbox {
     order: 4;
+    background: transparent;
   }
 
   .form__textarea {
     order: 5;
+    margin-top: 60px;
+  }
+
+  .form__radio--fieldset {
+    border: 2px solid #e5e5e5;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .form__required {
+    margin-top: 83px;
   }
 }
 

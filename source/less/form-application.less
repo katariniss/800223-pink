@@ -11,6 +11,12 @@
   color: #d22856;
   text-transform: uppercase;
   padding-top: 40px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 .form-application__item {
@@ -29,6 +35,10 @@
   cursor: pointer;
   text-align: left;
   padding-left: 90px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 120px;
+  }
 }
 
 .form-application__input {
@@ -46,6 +56,10 @@
   border: solid 2px #e5e5e5;
   background-color: #ffffff;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    left: 60px;
+  }
 }
 
 .form-application__label:hover input ~ .form-application__checkmark {

@@ -3,6 +3,20 @@
   padding: 0;
   color: #d22856;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    border: 2px solid #e5e5e5;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 60px;
+  }
+}
+
+.impressions__label {
+  @media (min-width: @tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .impressions__text {
@@ -16,7 +30,9 @@
 
   @media (min-width: @tablet-width) {
     width: 500px;
-    height: 190px;
+    height: 150px;
+    margin-bottom: 50px;
+    margin-top: 43px;
   }
 
   @media (min-width: @desktop-width) {

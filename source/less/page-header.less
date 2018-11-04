@@ -95,13 +95,17 @@
 
   position: absolute;
   top: 15px;
-  left: 17px;
+  left: 10px;
 
   width: 52px;
   height: 3px;
 
   background-color: #ffffff;
   box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+
+  @media (min-width: @tablet-width) {
+    top: 35px;
+  }
 }
 
 .page-header--closed .page-header__toggle:hover::before {
