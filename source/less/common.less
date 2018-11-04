@@ -4,7 +4,6 @@ body {
   padding: 0;
   font-family: "Open Sans", "Arial", sans-serif;
   text-align: center;
-  color: green;
 }
 
 @font-face {
@@ -21,6 +20,13 @@ body {
   src: url("fonts/opensansbold.woff2") format("woff2"), url("fonts/opensansbold.woff") format("woff");
 }
 
+@font-face {
+  font-weight: lighter;
+  font-family: "Open Sans";
+  font-style: normal;
+  src: url("fonts/opensanslight.woff2") format("woff2"), url("fonts/opensanslight.woff") format("woff");
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -29,10 +35,6 @@ img {
 a {
   text-decoration: none;
 }
-
-// .visually-hidden {
-//   display: none;
-// }
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;

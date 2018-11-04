@@ -1,22 +1,36 @@
 .page-main__title {
-  // background-image: url("/img/bg-back-mobile@1x.jpg");
-  background-color: @dark;
+  background-color: transparent;
   color: #ffffff;
   font-size: 24px;
-  font-weight: 300;
+  line-height: 30px;
+  font-weight: 100;
   padding-top: 36px;
-  padding-bottom: 40px;
-  margin-top: 0;
-  height: 174px;
+  padding-left: 48px;
+  padding-right: 40px;
+  margin: -175px auto 0 auto;
+  height: 100px;
+  width: 230px;
+
+  @media (min-width: @tablet-width) {
+    margin: -290px auto 0 auto;
+    height: 260px;
+    width: 500px;
+    font-size: 50px;
+    line-height: normal;
+  }
 }
 
 .page-main__intro {
   font-size: 14px;
   line-height: 30px;
-  margin-top: 55px;
+  margin-top: 84px;
   margin-bottom: 50px;
   margin-right: 20px;
   margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .page-main__text {
