@@ -40,6 +40,7 @@
   color: white;
 }
 
+
 @media (min-width: @desktop-width) {
   .site-list {
     display: flex;
@@ -57,5 +58,17 @@
 
   .site-list:first-child {
     margin-left: 40px;
+  }
+
+  .site-list a[href] {
+    &:hover {
+      color: #d22856;
+      border-top-color: #485461;
+    }
+
+    &:active {
+      color: white;
+      opacity: 0.3;
+    }
   }
 }

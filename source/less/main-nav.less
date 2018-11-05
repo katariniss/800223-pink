@@ -12,11 +12,14 @@
 
   @media (min-width: @desktop-width) {
     margin: 0 auto;
-    width: 660px;
+    // width: 660px;
+    height: 106px;
     display: flex;
     justify-content: space-around;
     text-transform: none;
-    margin-right: 128px;
+    padding-right: 128px;
+    padding-left: 100px;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -32,5 +35,9 @@
     background-image: url("/img/bg-back-tablet@1x.jpg");
     height: 400px;
     margin-top: -111px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }

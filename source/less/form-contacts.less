@@ -57,6 +57,10 @@
   .form-contacts__item {
     display: flex;
   }
+
+  .form-contacts__icon {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -66,6 +70,7 @@
 
   .form-contacts__input {
     width: 460px;
+    position: relative;
   }
 
   .form-contacts__label {
@@ -84,6 +89,22 @@
 
   .form-contacts__list {
     margin-bottom: 0;
+  }
+
+  .form-contacts__icon {
+    padding: 20px;
+    display: block;
+    width: 20px;
+    height: 22px;
+    margin-left: 444px;
+    margin-top: -63px;
+    position: absolute;
+    background: #e5e5e5;
+
+    &--mail {
+      padding-top: 23px;
+      height: 19px;
+    }
   }
 }
 
