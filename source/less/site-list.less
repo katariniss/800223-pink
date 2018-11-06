@@ -48,16 +48,33 @@
     justify-content: space-between;
   }
 
+  .site-list:first-child {
+    margin-left: 40px;
+  }
+
+  .site-list__item--active {
+    position: relative;
+  }
+
+  .site-list__item--active::after {
+    content: "";
+
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+    left: 0;
+
+    height: 2px;
+
+    background: white;
+  }
+
   .site-list a {
     text-transform: none;
     border: none;
     font-weight: normal;
     padding-top: 46px;
     padding-bottom: 46px;
-  }
-
-  .site-list:first-child {
-    margin-left: 40px;
   }
 
   .site-list a[href] {

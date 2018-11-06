@@ -1,16 +1,22 @@
 .form-application {
   background-color: #f2f2f2;
-  // border: 2px solid red;
+  padding-bottom: 0;
 
   @media (min-width: @tablet-width) {
     background-color: transparent;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 408px;
   }
 }
 
 .form-application__legend {
   color: #d22856;
   text-transform: uppercase;
-  padding-top: 40px;
+  padding-top: 34px;
+  font-size: 14px;
+  line-height: 18px;
 
   @media (min-width: @tablet-width) {
     padding-top: 0;
@@ -22,11 +28,16 @@
 .form-application__item {
   font-size: 18px;
   line-height: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 46px;
 }
 
 .form-application__list {
   padding-left: 0;
+  margin-top: 33px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 44px;
+  }
 }
 
 .form-application__label {
@@ -34,7 +45,7 @@
   position: relative;
   cursor: pointer;
   text-align: left;
-  padding-left: 90px;
+  padding-left: 76px;
 
   @media (min-width: @tablet-width) {
     padding-left: 120px;
@@ -49,8 +60,8 @@
 
 .form-application__checkmark {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -6px;
+  left: 4px;
   width: 37px;
   height: 36px;
   border: solid 2px #e5e5e5;
@@ -58,7 +69,7 @@
   border-radius: 50%;
 
   @media (min-width: @tablet-width) {
-    left: 60px;
+    left: 56px;
   }
 }
 

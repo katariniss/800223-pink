@@ -1,11 +1,11 @@
 .achievement {
   background-color: #f2f2f2;
-  padding-bottom: 42px;
+  padding-bottom: 0;
 
   @media (min-width: @tablet-width) {
     background: transparent;
     border: 2px solid #e5e5e5;
-    margin-top: 60px;
+    margin-top: 55px;
     margin-right: 20px;
     margin-left: 20px;
   }
@@ -14,6 +14,8 @@
     background-color: transparent;
     padding-left: 0;
     padding-right: 0;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }
 
@@ -21,35 +23,50 @@
   padding: 0;
   padding-left: 20px;
   text-align: left;
+  margin-top: 31px;
 
   @media (min-width: @tablet-width) {
     padding-left: 60px;
+    margin-top: 39px;
   }
 }
 
+.achievement__list:first-child {
+  margin-top: 33px;
+}
+
 .achievement__legend {
+  font-size: 14px;
+  line-height: 18px;
   color: @red;
   text-transform: uppercase;
   padding-top: 40px;
+  width: 220px;
 
   @media (min-width: @tablet-width) {
     padding-top: 0;
     padding-left: 31px;
     padding-right: 33px;
+    width: 430px;
   }
 }
 
 .achievement__item {
   font-size: 18px;
-  margin-top: 46px;
+  margin-top: 0;
+  margin-bottom: 52px;
 }
 
 .achievement__label {
   display: block;
   position: relative;
   cursor: pointer;
-  padding-left: 60px;
+  padding-left: 54px;
   padding-top: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 46px;
+  }
 }
 
 .achievement__input {
@@ -63,11 +80,15 @@
 .achievement__checkmark {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -18px;
   width: 35px;
   height: 35px;
   border: solid 2px #e5e5e5;
   background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    left: -15px;
+  }
 }
 
 .achievement__label:hover input ~ .achievement__checkmark {
@@ -107,6 +128,6 @@
   }
 
   .achievement__item {
-    width: 300px;
+    width: 290px;
   }
 }

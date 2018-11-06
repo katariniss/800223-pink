@@ -21,7 +21,7 @@
     </div>
     <nav class="page-header__main-nav main-nav">
       <ul class="main-nav__list site-list list">
-        <li class="site-list__item site-list__item--active">
+        <li class="site-list__item">
           <a class="site-list__link" href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
@@ -41,9 +41,8 @@
   </header>
   <main class="page-main">
     <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-    <p class="page-main__intro">Поделитесь своей историей и получите
-      <br>шанс выиграть ценный приз - 1000
-      <br>миль на вашу бонусную карту!
+    <p class="page-main__intro">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+      <span class="page-main__intro--request">Пожалуйста, заполните форму ниже:</span>
     </p>
     <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
       <!-- <div class="form__wrapper"> -->
@@ -89,7 +88,7 @@
             </li>
             <li class="form-application__item">
               <label class="form-application__label" for="windows-phone">
-                <input class="form-application__input" type="radio" name="platform" id="windows-phone" value="windows-phone"> Pink для Windows Phone
+                <input class="form-application__input" type="radio" name="platform" id="windows-phone" value="windows-phone">Windows Phone
                 <span class="form-application__checkmark"></span>
               </label>
             </li>
@@ -148,7 +147,7 @@
           Контактная информация
         </legend>
         <ul class="form-contacts__list list form__wrapper">
-          <li class="form-contacts__item">
+          <li class="form-contacts__item form-contacts__item--phone">
             <label class="form-contacts__label" for="tel">
               <div class="form-contacts__label-wrapper">Номер телефона</div>
               <div class="form-contacts__input-wrapper">
@@ -164,7 +163,7 @@
               </div>
             </label>
           </li>
-          <li class="form-contacts__item">
+          <li class="form-contacts__item form-contacts__item--email">
             <label class="form-contacts__label" for="email">
               <div class="form-contacts__label-wrapper">Адрес почты</div>
               <div class="form-contacts__input-wrapper">
@@ -199,7 +198,7 @@
         <textarea class="impressions__text">Можно прям в красках, не стесняясь в выражениях</textarea>
       </fieldset>
       <div class="form__submit--wrapper">
-        <input class="form__submit submit-button" type="submit" value="Отправить форму">
+        <input class="form__submit submit-button button" type="submit" value="Отправить форму">
         <p class="form__required">
           <span class="form__required--asterix">*</span>
           — обязательные поля

@@ -9,6 +9,11 @@
     margin-bottom: 0;
     padding-bottom: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }
 
 .form-contacts__label {
@@ -19,7 +24,7 @@
 
 .form-contacts__label-wrapper {
   text-align: left;
-  padding-left: 20px;
+  padding-left: 25px;
   padding-bottom: 15px;
   padding-top: 20px;
 }
@@ -30,10 +35,15 @@
   padding-top: 40px;
 
   @media (min-width: @tablet-width) {
+    font-size: 14px;
     padding-top: 0;
     padding-right: 34px;
     padding-left: 34px;
   }
+}
+
+.form-contacts__list {
+  margin-bottom: 0;
 }
 
 .form-contacts__input::placeholder {
@@ -42,7 +52,17 @@
 
 .form-contacts__input {
   padding: 20px;
+  outline: none;
   .placeholder(@green, 20px);
+}
+
+.form-contacts__input:hover {
+  border: 2px solid black;
+}
+
+.form-contacts__input:active,
+.form-contacts__input:focus {
+  border: 2px solid @red;
 }
 
 @media (min-width: @mobile-width) {
@@ -50,8 +70,12 @@
     display: none;
   }
 
+  .form-contacts__list {
+    padding-left: 0;
+  }
+
   .form-contacts__input {
-    width: 240px;
+    width: 230px;
   }
 
   .form-contacts__item {
@@ -80,24 +104,28 @@
 
   .form-contacts__input-wrapper {
     order: 1;
+    margin-left: 42px;
   }
 
   .form-contacts__label-wrapper {
     order: 2;
-    padding-bottom: 40px;
+    padding-bottom: 33px;
+    padding-left: 63px;
+    padding-top: 17px;
   }
 
   .form-contacts__list {
     margin-bottom: 0;
+    margin-top: 35px;
   }
 
   .form-contacts__icon {
     padding: 20px;
     display: block;
     width: 20px;
-    height: 22px;
-    margin-left: 444px;
-    margin-top: -63px;
+    height: 20px;
+    margin-left: 442px;
+    margin-top: -62px;
     position: absolute;
     background: #e5e5e5;
 
@@ -110,6 +138,28 @@
 
 @media (min-width: @desktop-width) {
   .form-contacts__input {
-    width: 340px;
+    width: 329px;
+  }
+
+  .form-contacts__list {
+    padding-left: 0;
+    margin-top: 39px;
+    justify-content: space-between;
+  }
+
+  .form-contacts__item {
+    padding-left: 60px;
+  }
+
+  .form-contacts__icon {
+    margin-left: 311px;
+  }
+
+  .form-contacts__label-wrapper {
+    padding-bottom: 20px;
+  }
+
+  .form-contacts__item--email {
+    padding-right: 60px;
   }
 }

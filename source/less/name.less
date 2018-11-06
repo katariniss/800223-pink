@@ -10,15 +10,26 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+  @media (min-width: @desktop-width) {
+    flex-wrap: nowrap;
+  }
 }
 
 .name__label--text {
   display: block;
+  font-size: 14px;
+  line-height: 30px;
   text-align: left;
-  margin-left: 50px;
+  margin-left: 28px;
 
   @media (min-width: @tablet-width) {
     margin-left: 10px;
+    margin-top: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
   }
 }
 
@@ -27,21 +38,44 @@
 }
 
 .name__input {
+  outline: none;
   padding: 20px;
   margin-top: 15px;
-  margin-bottom: 26px;
-  margin-left: 20px;
+  margin-bottom: 18px;
+  margin-left: 6px;
   margin-right: 20px;
   flex-grow: 1;
   .placeholder(@green, 20px);
 
   @media (min-width: @tablet-width) {
-    margin-right: 10px;
+    margin-right: -4px;
+    margin-top: 31px;
+    margin-left: 25px;
   }
+}
+
+.name__input:hover {
+  border: 2px solid black;
+}
+
+.name__input:active,
+.name__input:focus {
+  border: 2px solid @red;
 }
 
 @media (min-width: @mobile-width) {
   .name__input {
-    width: 280px;
+    width: 240px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .name {
+    padding-left: 0;
+    margin-left: 10px;
+  }
+
+  .name__input {
+    width: 300px;
   }
 }
