@@ -30,6 +30,11 @@
   margin: auto;
   margin-top: 35px;
 
+  @media (max-width: @mobile-width) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @media (min-width: @tablet-width) {
     margin-right: 20px;
     margin-left: 24px;
@@ -37,6 +42,11 @@
     width: 130px;
     font-size: 14px;
     line-height: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 24px;
+    margin-right: 35px;
   }
 }
 
@@ -72,7 +82,7 @@
   }
 
   .page-footer__copyright {
-    margin-right: 10px;
+    margin-right: 35px;
   }
 }
 

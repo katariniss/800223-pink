@@ -29,6 +29,14 @@
   &--asterix {
     color: @red;
   }
+
+  &--note {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: inline;
+    }
+  }
 }
 
 .form__submit {
@@ -139,6 +147,12 @@
       padding-left: 0;
       padding-bottom: 10px;
     }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 0;
+      padding-top: 0;
+      padding-bottom: 10px;
+    }
   }
 
   .form__required {
@@ -161,7 +175,7 @@
   }
 
   .form__name {
-    width: 433px;
+    width: 470px;
     height: 292px;
   }
 
@@ -185,7 +199,7 @@
   }
 
   .form__contacts {
-    margin-top: 50px;
+    margin-top: 47px;
     margin-right: 10px;
     margin-left: 10px;
     padding-left: 0;
@@ -197,8 +211,18 @@
     padding-left: 0;
   }
 
+  .form__submit {
+    margin-top: 63px;
+    margin-left: 0;
+  }
+
   .form__submit--wrapper {
     width: 940px;
     justify-content: space-between;
+  }
+
+  .form__required {
+    margin-right: 10px;
+    margin-bottom: 41px;
   }
 }
