@@ -91,24 +91,86 @@
   .application__container {
     display: flex;
     margin: auto;
+    margin-top: -590px;
     // width: 620px;
   }
 
   .application__content {
     order: 1;
+    width: 330px;
   }
 
   .application__wrapper {
     order: 2;
+    z-index: 0;
+    width: 866px;
+    left: -100px;
+  }
+
+  .application__photo--hand {
+    height: 545px;
+    width: 865px;
+    margin-top: -161px;
   }
 
   .application__motto {
     display: block;
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    margin-top: 92px;
+    margin-bottom: 0;
+    padding-left: 42px;
+    padding-right: 42px;
+    min-width: 186px;
+    min-height: 126px;
+  }
+
+  .application__list {
+    margin-top: 50px;
+  }
+
+  .application__description {
+    font-size: 18px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .application__container {
     width: 960px;
+    margin: -586px auto auto;
+  }
+
+  .application__photo--hand {
+    width: 1023px;
+    height: 645px;
+    left: 8px;
+  }
+
+  .application__wrapper {
+    width: 1023px;
+    left: 40px;
+    margin-top: -569px;
+  }
+
+  .application__content {
+    margin-top: -129px;
+  }
+
+  .application__motto {
+    font-size: 50px;
+  }
+
+  .application__download {
+    margin-top: 54px;
+  }
+
+  .application__list {
+    margin-top: 70px;
+  }
+
+  .application__description {
+    margin-top: 54px;
+    width: 300px;
   }
 }
