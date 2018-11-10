@@ -1,8 +1,8 @@
 .photos__panorama--image {
   background-image: url("../img/panorama-mobile@1x.jpg");
   background-size: cover;
-  background-position: 0 -10px;
-  height: 144px;
+  background-position: -12px -10px;
+  height: 147px;
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
@@ -21,6 +21,7 @@
   padding: 0;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 20px;
 }
 
 .photos__list .photos__text {
@@ -49,6 +50,10 @@
 
 .photos__text--like-wrapper {
   display: flex;
+}
+
+.photos__text--list-heart {
+  margin-top: 10px;
 }
 
 .photos__texts {
@@ -103,10 +108,10 @@
 }
 
 .photos__text--like {
-  margin-top: 9px;
-  margin-bottom: 0;
+  margin-top: 6px;
   padding-bottom: 21px;
-  padding-left: 28px;
+  padding-left: 17px;
+  margin-bottom: 0;
   color: @red;
   font-size: 12px;
   line-height: 24px;
@@ -116,7 +121,12 @@
 }
 
 .photos__list .photos__text--like {
-  padding-left: 10px;
+  padding-left: 19px;
+  margin-top: 10px;
+}
+
+.photos__text--panorama-heart {
+  margin-top: 8px;
 }
 
 // .photos__text--panorama-heart::after {
@@ -149,7 +159,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-right: 0;
-    margin-top: 50px;
+    margin-top: 49px;
   }
 
   .photos__item {
@@ -157,6 +167,7 @@
     min-height: 456px;
     margin-right: 20px;
     position: relative;
+    margin-bottom: 19px;
   }
 
   .photos__text--like-wrapper {
@@ -174,7 +185,17 @@
   .photos__text--list-heart {
     order: 2;
     margin-top: 25px;
-    padding-right: 10px;
+    padding-right: 20px;
+  }
+
+  .photos__text.photos__text--like {
+    padding-left: 0;
+    margin-top: 26px;
+  }
+
+  .photos__text--wrapper {
+    padding-top: 7px;
+    padding-left: 28px;
   }
 
   .photos__texts {
@@ -258,7 +279,7 @@
   .photos__list {
     width: 940px;
     margin: 0 auto;
-    margin-top: 45px;
+    margin-top: 48px;
     justify-content: space-between;
   }
 
@@ -269,6 +290,19 @@
 
   .photos__texts {
     width: 910px;
+  }
+
+  .photos__text--wrapper {
+    padding-top: 7px;
+    padding-left: 28px;
+  }
+
+  .photos__text--list-heart {
+    padding-right: 20px;
+  }
+
+  .photos__text.photos__text--like {
+    padding-left: 0;
   }
 
   // .photos__text--panorama-heart::after {
