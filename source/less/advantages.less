@@ -43,6 +43,8 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 27px;
+  margin-left: auto;
+  margin-right: auto;
 
   &--second {
     padding-top: 9px;
@@ -99,7 +101,6 @@
 
     &--second {
       width: 350px;
-      margin-left: 155px;
       padding-top: 0;
       margin-top: -40px;
     }
@@ -127,10 +128,39 @@
   .advantages__wrapper {
     margin: auto;
     width: 940px;
+
+    &::after {
+      transform: skewY(-5deg);
+    }
   }
 
   .advantages__duration {
     width: 940px;
     margin: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__intro-wrapper {
+    height: 281px;
+
+    &::after {
+      transform: skewY(-4.3deg);
+    }
+  }
+
+  .advantages__intro {
+    font-size: 50px;
+    line-height: 58px;
+
+    &--first {
+      padding-top: 22px;
+    }
+
+    &--second {
+      width: 500px;
+      padding-top: 0;
+      margin-top: -45px;
+    }
   }
 }
