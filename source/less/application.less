@@ -1,18 +1,14 @@
 .application {
   background: #1d2631;
-  border: 2px solid transparent;
-  border-bottom: 0;
 }
 
 .application__wrapper {
   position: relative;
   top: 0;
   background: transparent;
-  width: 498px;
   height: 314px;
-  left: -173px;
   z-index: -1;
-  margin-top: -465px;
+  margin-top: -463px;
 }
 
 .application__content {
@@ -22,9 +18,8 @@
 
 .application__photo {
   &--hand {
-    position: absolute;
-    top: 176px;
-    left: 0;
+    margin-top: 176px;
+    margin-left: -62px;
   }
 
   &--background {
@@ -47,7 +42,7 @@
   text-decoration: none;
   color: white;
   padding: 14px 36px;
-  margin-top: 30px;
+  margin-top: 27px;
   border-radius: 33px;
 }
 
@@ -57,7 +52,7 @@
   list-style-type: none;
   padding-left: 0;
   margin-top: 33px;
-  margin-bottom: 21px;
+  margin-bottom: 19px;
   width: 241px;
   margin-left: auto;
   margin-right: auto;
@@ -78,7 +73,7 @@
   width: 250px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 17px;
+  padding-bottom: 20px;
   line-height: 21px;
 }
 
@@ -87,6 +82,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .application {
+    background: none;
+  }
+
   .application__container {
     display: flex;
     margin: auto;
@@ -102,13 +101,14 @@
   .application__wrapper {
     order: 2;
     z-index: 0;
-    left: -100px;
     margin-top: -483px;
+    height: auto;
   }
 
   .application__photo--hand {
-    height: 545px;
-    margin-top: -166px;
+    margin-top: 13px;
+    margin-left: -18px;
+    max-width: none;
   }
 
   .application__motto {
@@ -116,20 +116,32 @@
     color: white;
     font-size: 40px;
     font-weight: 300;
-    margin-top: 92px;
+    margin-top: 91px;
     margin-bottom: 0;
-    padding-left: 42px;
+    padding-left: 52px;
     padding-right: 42px;
     min-width: 186px;
     min-height: 126px;
+    line-height: 48px;
+  }
+
+  .application__download {
+    margin-top: 31px;
+    padding-left: 45px;
+    margin-left: 10px;
+    letter-spacing: 0.8px;
   }
 
   .application__list {
-    margin-top: 50px;
+    margin-top: 44px;
+    margin-left: 48px;
   }
 
   .application__description {
     font-size: 18px;
+    width: 300px;
+    margin-top: 37px;
+    margin-left: 20px;
   }
 }
 
@@ -140,35 +152,36 @@
 
   .application__container {
     width: 960px;
-    margin: -586px auto auto;
+    margin: -598px auto auto;
   }
 
   .application__photo--hand {
-    width: 1023px;
-    height: 645px;
-    left: 8px;
-  }
-
-  .application__wrapper {
-    width: 1023px;
-    left: 40px;
-    margin-top: -569px;
+    margin-top: -74px;
+    margin-left: 26px;
   }
 
   .application__content {
-    margin-top: -129px;
+    margin-top: -125px;
+    margin-left: -10px;
   }
 
   .application__motto {
     font-size: 50px;
+    line-height: 58px;
   }
 
   .application__download {
     margin-top: 54px;
+    font-size: 20px;
+    width: 244px;
+    padding-left: 21px;
+    letter-spacing: 0;
+    padding-top: 12px;
+    padding-right: 26px;
   }
 
   .application__list {
-    margin-top: 70px;
+    margin-top: 66px;
   }
 
   .application__description {
