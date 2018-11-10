@@ -113,14 +113,18 @@
           </li>
           <li class="advantages__item">
             <h3 class="advantages__title">Меняет мир вокруг</h3>
-            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текствовой подписью, чтобы усилить эффект</p>
+            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="advantages__item">
             <h3 class="advantages__title">Заводит новых друзей</h3>
-            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь с друзьями и заводите новых</p>
+            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь <span class="advantages__description--photo-word">фотографиями </span>с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img class="advantages__photo" src="img/iphone-screen-mobile@1x.png">
+        <picture>
+            <source media="(min-width: 1200px)" srcset="mg/iphone-screen-3-desktop@1x.png">
+            <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png">
+            <img class="advantages__photo" src="img/iphone-screen-mobile@1x.png">
+        </picture>
       </div>
       <div class="advantages__duration duration">
         <img class="duration__timer" src="img/icon-timer.svg" alt="Таймер" width="299px" height="343px">
