@@ -1,1 +1,22 @@
-// ToDo
+.slider__toggle {
+  width: 8px;
+  height: 8px;
+  background-color: #bec2c7;
+  border-radius: 50%;
+  padding: 0;
+  margin-right: 7px;
+  margin-left: 5px;
+}
+
+.slider__toggle--active {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: solid 3px black;
+}
+
+.slider__toggle::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
