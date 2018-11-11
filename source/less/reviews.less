@@ -61,28 +61,42 @@
 
 @media (min-width: @tablet-width) {
   .reviews {
-    margin-top: 0;
+    margin-top: -32px;
   }
 
   .reviews__wrapper {
     margin: auto;
+    padding-top: 0;
+  }
+
+  .reviews__wrapper-main {
+    height: 271px;
   }
 
   .reviews__item {
     display: flex;
     flex-direction: column;
+    width: 635px;
+    margin-bottom: 21px;
   }
 
   .reviews__text {
     order: 1;
+    font-size: 18px;
+    letter-spacing: 0.4px;
   }
 
   .reviews__author-name {
     order: 2;
+    margin-top: 20px;
+    font-size: 20px;
   }
 
   .reviews__author-age {
     display: block;
     order: 3;
+    font-size: 14px;
+    margin-top: 13px;
+    letter-spacing: 0.3px;
   }
 }
