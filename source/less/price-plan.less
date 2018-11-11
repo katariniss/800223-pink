@@ -13,6 +13,7 @@
   width: 620px;
   margin-right: auto;
   margin-left: auto;
+  transform: translateX(-257px);
 }
 
 .price-plan__toggles {
@@ -28,6 +29,8 @@
 
 .price-plan__table {
   overflow: hidden;
+  width: 320px;
+  margin: auto;
 }
 
 .price-plan__item {
@@ -133,6 +136,7 @@
   .price-plan__list {
     text-transform: none;
     margin-top: 117px;
+    transform: none;
   }
 
   .price-plan__item--name {
@@ -188,6 +192,10 @@
   .price-plan__toggles {
     display: none;
   }
+
+  .price-plan__table {
+    width: 660px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -225,5 +233,9 @@
 
   .price-plan__options.no-heading .price-plan__option {
     width: 220px;
+  }
+
+  .price-plan__table {
+    width: 940px;
   }
 }
