@@ -1,7 +1,26 @@
 .reviews {
   background: white;
   margin-top: -91px;
-  z-index: 1;
+}
+
+.reviews__wrapper-main {
+  height: 353px;
+  position: relative;
+
+  &::after {
+    background: white;
+    content: "";
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    bottom: 0;
+    transform: skewY(-4.6deg);
+    transform-origin: 100%;
+    backface-visibility: hidden;
+  }
 }
 
 .reviews__wrapper {
@@ -9,6 +28,12 @@
   margin-bottom: 42px;
   font-size: 18px;
   padding-top: 30px;
+}
+
+.reviews__item {
+  width: 271px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .reviews__author-name {
@@ -19,7 +44,7 @@
 .reviews__text {
   font-size: 14px;
   line-height: 30px;
-  margin-top: 20px;
+  margin-top: 18px;
 }
 
 .reviews__toggles {
