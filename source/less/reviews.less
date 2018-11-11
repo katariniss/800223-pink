@@ -3,23 +3,35 @@
   margin-top: -91px;
 }
 
+// .reviews__white-triangle {
+//   width: 100%;
+//   height: 52px;
+//   margin-top: -97px;
+//   position: relative;
+//   top: -36px;
+// }
+
 .reviews__wrapper--main {
   height: 353px;
   position: relative;
 
   &::after {
-    background: yellowgreen;
+    background: #f2f2f2;
     content: "";
     display: block;
     height: 50%;
     left: 0;
     position: absolute;
     right: 0;
-    z-index: -1;
-    bottom: 0;
+    z-index: 1;
+    bottom: -176px;
     transform: skewY(-4.6deg);
     transform-origin: 100%;
     backface-visibility: hidden;
+
+    @media (min-width: @tablet-width) {
+      bottom: -136px;
+    }
   }
 }
 
@@ -121,7 +133,8 @@
     margin-top: 27px;
 
     &::after {
-      transform: skewY(-3.9deg);
+      transform: rotate(-3.9deg);
+      bottom: -124px;
     }
   }
 
