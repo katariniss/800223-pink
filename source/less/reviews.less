@@ -100,3 +100,33 @@
     letter-spacing: 0.3px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    margin-top: -33px;
+    padding-top: 150px;
+  }
+
+  .reviews__wrapper-main {
+    height: 246px;
+
+    &::after {
+      transform: skewY(-3.9deg);
+    }
+  }
+
+  .reviews__item {
+    width: 690px;
+  }
+
+  .reviews__author-name {
+    font-size: 24px;
+    margin-top: 18px;
+  }
+
+  .reviews__author-age {
+    font-size: 17px;
+    margin-top: 10px;
+    letter-spacing: 0.9px;
+  }
+}
